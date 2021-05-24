@@ -56,6 +56,15 @@ variable "server_version" {
 variable "ssl_enforcement_enabled" {
   description = "Specifies if SSL should be enforced on connections. Possible values are Enabled and Disabled."
   type        = bool
+<<<<<<< HEAD
+=======
+  default     = true
+}
+
+variable "public_network_access_enabled" {
+  description = "Whether or not public network access is allowed for this server. Possible values are Enabled and Disabled."
+  type        = bool
+>>>>>>> 0f607dbc9d08528bb16a48fc9dc8831aa4a92f5c
   default     = true
 }
 
