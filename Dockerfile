@@ -1,9 +1,5 @@
 # Pull the base image with given version.
-<<<<<<< HEAD
-ARG BUILD_TERRAFORM_VERSION="0.13.0"
-=======
 ARG BUILD_TERRAFORM_VERSION="0.13.5"
->>>>>>> 0f607dbc9d08528bb16a48fc9dc8831aa4a92f5c
 FROM mcr.microsoft.com/terraform-test:${BUILD_TERRAFORM_VERSION}
 
 ARG MODULE_NAME="terraform-azurerm-postgresql"

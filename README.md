@@ -21,20 +21,6 @@ module "postgresql" {
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
 
-<<<<<<< HEAD
-  server_name                  = "example-server"
-  sku_name                     = "GP_Gen5_2"
-  storage_mb                   = 5120
-  backup_retention_days        = 7
-  geo_redundant_backup_enabled = false
-  administrator_login          = "login"
-  administrator_password       = "password"
-  server_version               = "9.5"
-  ssl_enforcement_enabled      = true
-  db_names                     = ["my_db1", "my_db2"]
-  db_charset                   = "UTF8"
-  db_collation                 = "English_United States.1252"
-=======
   server_name                   = "example-server"
   sku_name                      = "GP_Gen5_2"
   storage_mb                    = 5120
@@ -48,7 +34,6 @@ module "postgresql" {
   db_names                      = ["my_db1", "my_db2"]
   db_charset                    = "UTF8"
   db_collation                  = "English_United States.1252"
->>>>>>> 0f607dbc9d08528bb16a48fc9dc8831aa4a92f5c
 
   firewall_rule_prefix = "firewall-"
   firewall_rules = [
